@@ -1,0 +1,47 @@
+.button {
+  padding: 8px;
+  color: white;
+  font-size: $main-font-size;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &_secondary {
+    background-color: $secondary;
+
+    & .button_outline {
+      color: $text-color;
+      background-color: transparent;
+      border-color: $secondary;
+    }
+  }
+
+  &_success {
+    background-color: $success;
+
+    .button_outline {
+      color: $text-color;
+      background-color: transparent;
+      border-color: $success;
+    }
+  }
+
+  &_primary {
+    background-color: $primary;
+  }
+
+  &_warning {
+    background-color: $warning;
+  }
+
+  &_error {
+    background-color: $error;
+  }
+
+  &_disabled {
+    background-color: $secondary;
+    filter: opacity(.3);
+    cursor: not-allowed;
+  }
+}
